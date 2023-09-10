@@ -1,0 +1,41 @@
+.container-info {
+    /* display: flex; */
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    padding: 0rem 8rem;
+}
+
+.card-info {
+
+
+
+    text-align: left;
+
+}
+
+.name {
+    font-family: 'Bitter', serif;
+    font-family: 'League Spartan', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 50px;
+    margin-bottom: -25px;
+    text-align: left;
+    margin-top: 150px;
+}
+
+
+
+.bio {
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    /* text-align: right; */
+    text-align: left;
+
+
+}

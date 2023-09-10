@@ -4,39 +4,40 @@
 html,
 body,
 #root {
-    /* position: fixed; */
-    /* top: 0;
-    left: 0; */
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background: white;
+    background: rgb(245, 239, 230);
+    font-family: 'Outfit', sans-serif;
 }
 
 canvas {
     touch-action: none;
 }
 
-.bio {
+/* .bio {
 
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
     /* text-align: right; */
-    text-align: center;
+/* text-align: left; */
 
-}
 
-.name {
+/* } */
+
+/* .name {
     font-family: 'Bitter', serif;
     font-family: 'League Spartan', sans-serif;
     /* font-family: 'Open Sans', sans-serif; */
-    font-size: 40px;
-    margin-bottom: -20px;
-    text-align: center;
-}
+/* font-size: 50px;
+    margin-bottom: -50px;
+    text-align: left;
+    margin-top: 150px;
+} */
 
 
-
-.info-container {
-    width: 500px;
-    position: relative;
-}
+/* .text-box {
+    padding: 16px; /* Padding around the text */
+/* width: 550px; Width of the box */
