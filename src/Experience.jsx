@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { MeshMatcapMaterial } from "three";
 import Girl from "./World/Girl";
 import Room from "./World/Room";
-
+import PBR from "./World/PBR";
 
 const Experience = () => {
   const sphereRef = useRef();
@@ -17,10 +17,10 @@ const Experience = () => {
     boxRef.current.rotation.x += 1 * delta;
     torusRef.current.rotation.x += 1 * delta;
 
-    const yBox = Math.sin(time * 1) * 0.5 - 0.5
-    const ySphere = Math.sin(time * 1.5) * 0.5 - 0.5 
-    const yCone = Math.sin(time * 2) * 0.5 - 0.5
-    const yTorus = Math.sin(time * 2.5) * 0.5 - 0.5
+    const yBox = Math.sin(time * 1) * 0.5 - 0.5;
+    const ySphere = Math.sin(time * 1.5) * 0.5 - 0.5;
+    const yCone = Math.sin(time * 2) * 0.5 - 0.5;
+    const yTorus = Math.sin(time * 2.5) * 0.5 - 0.5;
 
     // Actualiza la posición del objeto
     if (sphereRef.current && boxRef.current) {
@@ -32,20 +32,21 @@ const Experience = () => {
   });
   return (
     <>
-    <ambientLight intensity={2} />
+    <OrbitControls />
+      <ambientLight intensity={2} />
       <directionalLight position={[0, 25, 5]} intensity={8} />
-    <Room />
+      <Room />
       <Girl />
-            
-      <mesh ref={sphereRef} scale={0.1} position={[-4, 0, 0]}>
+      <PBR />
+      <mesh ref={sphereRef} scale={0.1} position={[4, 1,0]}>
         <sphereGeometry args={[1, 32, 32]} />
         <meshNormalMaterial wireframe={false} color="purple" />
       </mesh>
-      <mesh ref={boxRef} scale={0.1} position={[-3.5, 0, 0]}>
+      <mesh ref={boxRef} scale={0.1} position={[3.5, 2,0]}>
         <boxGeometry args={[1, 1, 1]} />
         <meshStandardMaterial wireframe={false} color="purple" />
       </mesh>
-      <mesh ref={coneRef} scale={0.1} position={[-3, 0, 0]}>
+      <mesh ref={coneRef} scale={0.1} position={[3, 3, 0]}>
         <coneGeometry />
         <meshMatcapMaterial
           wireframe={false}
@@ -53,8 +54,8 @@ const Experience = () => {
           color="red"
         />
       </mesh>
-      <mesh ref={torusRef} scale={0.1} position={[-2.5, 0, 0]}>
-        <torusGeometry  />
+      <mesh ref={torusRef} scale={0.1} position={[2.5, 0, 0]}>
+        <torusGeometry />
         <meshToonMaterial
           wireframe={false}
           position={[10, 10, 5]}

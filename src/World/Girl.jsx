@@ -14,7 +14,8 @@ const Girl = () => {
     }, [])
 
     return(
-        <mesh ref={girlRef} position-x={3} position-y={-1.5} position-z={1} rotation-y={-Math.PI *0.15} scale={0.5}>
+        <mesh ref={girlRef} position-x={-2} 
+        position-y={-1.1} position-z={1} rotation-y={-Math.PI *-0.15} scale={0.7}>
             <primitive object={girlModel.scene}/>
         </mesh>
     )
