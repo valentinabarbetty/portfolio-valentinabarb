@@ -1,0 +1,32 @@
+.container-info {
+    display: flex;
+    height: 100%;
+    width: 40%;
+    flex-direction: column;
+    justify-content: flex-start; /* Adjust to your preference */
+    align-items: center; /* Positions content to the right */
+    position: fixed;
+    top: 0; /* Adjust top position as needed */
+    right:0; /* Positions it to the right */
+    z-index: 5; 
+    padding: 0rem 4rem;
+}
+
+.name {
+    font-family: 'Bitter', serif;
+    font-family: 'League Spartan', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-size: 50px;
+    margin-bottom: -25px;
+    text-align: right;
+    margin-top: 80px;
+    
+}
+
+.bio {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    /* text-align: right; */
+    text-align: right;
+
+}
