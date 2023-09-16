@@ -1,10 +1,12 @@
-import { OrbitControls } from "@react-three/drei";
+import { BakeShadows, ContactShadows, Environment, OrbitControls } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useRef } from "react";
 import { MeshMatcapMaterial } from "three";
 import Girl from "./World/Girl";
 import Room from "./World/Room";
 import PBR from "./World/PBR";
+import Lights from "./World/Lights";
+import Environments from "./World/Environment";
 
 const Experience = () => {
   const sphereRef = useRef();
@@ -34,11 +36,23 @@ const Experience = () => {
     <>
     <OrbitControls />
       <ambientLight intensity={2} />
-      <directionalLight position={[0, 25, 5]} intensity={8} />
-      <Room />
+      <Lights />
+      <BakeShadows />
+      <ContactShadows
+                opacity={1}
+                position-y={-1.9}
+                frames={60}
+                scale={10}
+                blur={1}
+                resolution={512}
+                color="grey"
+            /> 
+      {/* <directionalLight position={[0, 25, 5]} intensity={8} /> */}
+      <Environments preset="sunset" background={true}/>
+      <Room/>
       <Girl />
       <PBR />
-      <mesh ref={sphereRef} scale={0.1} position={[4, 1,0]}>
+      <mesh ref={sphereRef} scale={0.1} castShadow position={[4, 1,0]}>
         <sphereGeometry args={[1, 32, 32]} />
         <meshNormalMaterial wireframe={false} color="purple" />
       </mesh>

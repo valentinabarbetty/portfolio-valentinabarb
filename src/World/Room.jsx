@@ -27,8 +27,7 @@ export function Room(props) {
   return (
     <group {...props} dispose={null}>
       <mesh
-        castShadow
-        receiveShadow
+        castShadow={false}
         geometry={nodes.Cube_Material_0.geometry}
         material={materials.Material}
         rotation-x={-Math.PI / 2.5}
