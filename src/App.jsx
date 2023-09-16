@@ -19,7 +19,8 @@ const App = () => {
          I'm currently studying systems engineering at Universidad del Valle
          😉"
       />
-      <Canvas >
+      <Canvas
+                shadows>
         <Experience />
       </Canvas>
     </>
