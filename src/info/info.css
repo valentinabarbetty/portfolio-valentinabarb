@@ -9,7 +9,7 @@
     top: 0; /* Adjust top position as needed */
     right:0; /* Positions it to the right */
     z-index: 5; 
-    padding: 0rem 4rem;
+    padding: 0rem 2rem;
 }
 
 .name {
@@ -17,7 +17,7 @@
     font-family: 'League Spartan', sans-serif;
     /* font-family: 'Open Sans', sans-serif; */
     font-size: 50px;
-    margin-bottom: -25px;
+    margin-bottom: -10px;
     text-align: right;
     margin-top: 80px;
     
