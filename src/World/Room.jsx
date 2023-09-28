@@ -34,7 +34,7 @@ export function Room(props) {
         rotation-y={-Math.PI * 2}
         
         scale={0.7}
-        position-x={-3} position-y={-0.80} position-z={-1} 
+        position-x={-3} position-y={-0.9} position-z={-2} 
       />
       
     </group>

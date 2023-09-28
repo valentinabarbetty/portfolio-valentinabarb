@@ -12,8 +12,9 @@ export function PBR(props) {
     roughnessMap: PATH + 'leather_white_nor_dx_4k.jpg',
     aoMap: PATH + 'leather_white_ao_4k.jpg',
   })
+  
   return (
-    <group {...props} dispose={null}>
+    <group {...props} dispose={null} >
       <group rotation={[-Math.PI / 2.5, -Math.PI * 2, 0]} scale={0.15}>
         <group position={[-12, 15, -6]}>
           <mesh

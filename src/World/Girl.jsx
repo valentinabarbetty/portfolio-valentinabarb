@@ -27,8 +27,8 @@ const Girl = (props) => {
     //   </mesh>
 
     <group ref={girlRef} {...props} dispose={null}  
-    position-x={-2} position-y={-1.1}
-        position-z={1} rotation-y={-Math.PI * -0.15}
+    position-x={-2} position-y={-1.12}
+        position-z={-0.5} rotation-y={-Math.PI * -0.15}
             scale={0.7}
     >
       <group name="Sketchfab_Scene">
