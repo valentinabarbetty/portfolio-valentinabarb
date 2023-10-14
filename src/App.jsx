@@ -1,5 +1,5 @@
 import { Canvas } from "@react-three/fiber";
-import Experience from "./Experience";
+import Experience from "./World/Experience";
 import Info from "./info/Info";
 import { Loader } from "@react-three/drei";
 import { useState} from "react";
